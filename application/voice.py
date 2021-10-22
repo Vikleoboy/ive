@@ -7,8 +7,8 @@ from playsound import playsound
 def say(text):
     try:
         text = gtts.gTTS(text)
-        text.save('hello.mp4')
-        playsound('hello.mp4')
+        text.save('hello.mp3')
+        playsound('hello.mp3')
     except:
         pass
 

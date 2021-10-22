@@ -39,3 +39,4 @@ for i in py_data:  # lopping through data
     print(func)
     if func:
         subprocess.call(f'python {i[-1]}', shell=True)
+

@@ -12,4 +12,3 @@ def say(text):
     except:
         pass
 
-say('ok')

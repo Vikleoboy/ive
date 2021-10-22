@@ -1,0 +1,1 @@
+shutdown,good night,shut down

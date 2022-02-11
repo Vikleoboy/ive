@@ -1,1 +1,1 @@
-shutdown,good night,shut down
+shutdown,good night,shut down,band kar de

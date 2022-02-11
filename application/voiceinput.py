@@ -10,25 +10,22 @@ def talk():
     r = sr.Recognizer()
 
     # use the microphone as source for input.
-    try:
-        with sr.Microphone() as source2:
 
-            # wait for a second to let the recognizer
-            # adjust the energy threshold based on
-            # the surrounding noise level
-            r.adjust_for_ambient_noise(source2, duration=0.2)
+    with sr.Microphone() as source2:
+        # wait for a second to let the recognizer
+        # adjust the energy threshold based on
+        # the surrounding noise level
+        r.adjust_for_ambient_noise(source2, duration=0.2)
 
-            # listens for the user's input
-            audio2 = r.listen(source2)
+        # listens for the user's input
+        audio2 = r.listen(source2)
 
-            # Using ggogle to recognize audio
-            mytext = r.recognize_google(audio2)
-            mytext = mytext.lower()
-            print(f'u said {mytext}')
+        # Using ggogle to recognize audio
+        mytext = r.recognize_google(audio2)
+        mytext = mytext.lower()
+        print(f'u said {mytext}')
 
-            return mytext
-    except:
-        print('*')
+        return mytext
 
 
 def keywords(what_i_said, lst):

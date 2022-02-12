@@ -8,3 +8,4 @@ def show_data(name):    # function to show things in txt file
         return file_text
     except:
         print('there is no such file ')
+
